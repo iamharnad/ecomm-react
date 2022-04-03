@@ -3,14 +3,19 @@ import './Header.css';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
 
 const Header = () => {
+  const [{ basket }, dispatch] = useStateValue();
   return (
     <div className='header'>
-      <div className='header__logo'>
-        <StorefrontIcon className='header__logoImage' />
-        <h2 className='header__logoTitle'>e-commerce website</h2>
-      </div>
+      <Link to='/' style={{ textDecoration: 'none' }}>
+        <div className='header__logo'>
+          <StorefrontIcon className='header__logoImage' />
+          <h2 className='header__logoTitle'>e-commerce website</h2>
+        </div>
+      </Link>
       <div className='header__search'>
         <input type='text' className='header__searchInput' />
         <ManageSearchIcon className='header__searchIcon' />
@@ -24,11 +29,15 @@ const Header = () => {
           <span className='nav__itemLineOne'>Your</span>
           <span className='nav__itemLineTwo'>Shop</span>
         </div>
-        <div className='nav__itemBasket'>
-          <ShoppingBasketIcon />
+        <Link to='/checkout' style={{ textDecoration: 'none' }}>
+          <div className='nav__itemBasket'>
+            <ShoppingBasketIcon />
 
-          <span className='nav__itemLineTwo nav_basketCount'>0</span>
-        </div>
+            <span className='nav__itemLineTwo nav_basketCount'>
+              {basket.length}
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   );
