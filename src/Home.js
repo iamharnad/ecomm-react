@@ -7,7 +7,7 @@ const Home = () => {
     <div className='home'>
       <div className='home__container'>
         <img
-          src='https://static.vecteezy.com/system/resources/thumbnails/002/216/694/small/shopping-trendy-banner-vector.jpg'
+          src='https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100046/51310252-thin-line-flat-design-banner-of-online-shopping-e-commerce-m-commerce-modern-vector-illustration-con.jpg'
           alt=''
           className='home__image'
         />
