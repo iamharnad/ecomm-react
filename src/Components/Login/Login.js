@@ -3,7 +3,7 @@ import './Login.css';
 import { useState } from 'react';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import { Link, useHistory } from 'react-router-dom';
-import { auth } from './firebase';
+import { auth } from '../firebase/firebase';
 
 const Login = () => {
   const history = useHistory();

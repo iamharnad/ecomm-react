@@ -1,9 +1,11 @@
 import './App.css';
-import Header from './Header';
-import Home from './Home';
-import Checkout from './Checkout';
-import Login from './Login';
-import Footer from './Footer';
+//import { Header, Home, Checkout, Login, Footer } from './Components';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
+import Checkout from './Components/Checkout/Checkout';
+import Login from './Components/Login/Login';
+import Footer from './Components/Footer/Footer';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
