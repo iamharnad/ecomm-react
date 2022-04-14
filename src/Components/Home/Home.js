@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
-import Product from './Product';
+import Product from '../Product/Product';
 
 const Home = () => {
   return (
     <div className='home'>
       <div className='home__container'>
         <img
-          src='https://static.vecteezy.com/system/resources/thumbnails/002/216/694/small/shopping-trendy-banner-vector.jpg'
-          alt=''
+          src='https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100046/51310252-thin-line-flat-design-banner-of-online-shopping-e-commerce-m-commerce-modern-vector-illustration-con.jpg'
+          alt='home-container-image'
           className='home__image'
         />
 
